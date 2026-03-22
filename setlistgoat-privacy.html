@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Setlist Goat – Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    .lang {
+      margin-bottom: 20px;
+    }
+    .lang button {
+      margin-right: 10px;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+    .section {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .date {
+      color: gray;
+      font-size: 0.9em;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="lang">
+  <button onclick="showLang('en')">EN</button>
+  <button onclick="showLang('de')">DE</button>
+  <button onclick="showLang('ru')">RU</button>
+</div>
+
+<div id="en" class="section active">
+  <h1>Privacy Policy</h1>
+  <div class="date">Last updated: March 2026</div>
+  <p>Setlist Goat does not collect, store, or share any personal data.</p>
+  <p>All user-created content (such as songs and setlists) is stored locally on the user's device.</p>
+  <p>No data is transmitted to external servers.</p>
+  <p>In future versions, optional features such as user accounts, cloud synchronization, or collaboration may be introduced. This policy will be updated accordingly.</p>
+  <p>Contact: setlistgoat@gmail.com</p>
+</div>
+
+<div id="de" class="section">
+  <h1>Datenschutzerklärung</h1>
+  <div class="date">Stand: März 2026</div>
+  <p>Setlist Goat erhebt, speichert oder verarbeitet keine personenbezogenen Daten.</p>
+  <p>Alle vom Nutzer erstellten Inhalte (z. B. Songs und Setlists) werden lokal auf dem Gerät gespeichert.</p>
+  <p>Es werden keine Daten an externe Server übertragen.</p>
+  <p>In zukünftigen Versionen können optionale Funktionen wie Benutzerkonten oder Cloud-Synchronisation hinzugefügt werden. Diese Datenschutzerklärung wird entsprechend aktualisiert.</p>
+  <p>Kontakt: setlistgoat@gmail.com</p>
+</div>
+
+<div id="ru" class="section">
+  <h1>Политика конфиденциальности</h1>
+  <div class="date">Обновлено: март 2026</div>
+  <p>Setlist Goat не собирает, не хранит и не передает персональные данные.</p>
+  <p>Все данные (например, песни и сет-листы) сохраняются локально на устройстве пользователя.</p>
+  <p>Данные не передаются на внешние серверы.</p>
+  <p>В будущих версиях могут появиться дополнительные функции (аккаунты, синхронизация и т.д.). В этом случае политика будет обновлена.</p>
+  <p>Контакт: setlistgoat@gmail.com</p>
+</div>
+
+<script>
+  function showLang(lang) {
+    document.querySelectorAll('.section').forEach(el => el.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
